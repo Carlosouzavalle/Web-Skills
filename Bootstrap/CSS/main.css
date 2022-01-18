@@ -1,0 +1,29 @@
+body {
+    font: 20px arial,serif;
+}
+
+.navbar {
+    background-color: #5fb404;
+    font-size: 25px;
+}
+
+.quem-somos {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.margin {
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.parceiros {
+    background-color: rgb(98, 216, 255);
+}
+
+h3 {
+    padding-top: 20px;
+}
+.bg-footer {
+    background-color: deepskyblue;
+}
