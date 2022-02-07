@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.myname {
+    text-align: center;
+    padding: 8px;
+}
+
+.perfil  {
+    display: flex;
+    justify-content: center;
+    background: rgba(138, 138, 138, 0.727);
+    padding: 8px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+li {
+    display: inline;
+    padding: 0px 10px 0px 0px;
+}
+
+a{
+    text-decoration: none;
+}

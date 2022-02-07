@@ -32,3 +32,8 @@
 var funcao = () =>  {console.log('Arrow function')}
 
 funcao()
+
+//ARROW FUNCTION 
+// this sempre será objeto global. métodos para alterar seu valor não irão funcionar
+// não existe o objeto arguments
+// o construtor (ex: new MeuObjeto()) também não pode ser utilizado
