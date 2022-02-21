@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(55%);
+            height: 50px;
+        }
+
+        .darkMode{
+            background-color: black;
+            color: white;        
+        }
+
+    </style>
+</head>
+<body>
+    <button id="botao" onclick="myFunction()">Light Mode</button>
+
+    <h1>Deu Certo</h1>
+
+    <script>
+        function myFunction() {
+            let element = document.body
+            element.classList.toggle("darkMode")
+
+            document.getElementById('botao').innerHTML = 'Dark Mode'
+        }
+    </script>
+</body>
+</html>
