@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+    <div id="app">
+        <p>{{ contador }}</p>
+        <p>
+            <!-- <button v-on:click="add">+1</button>
+            <button v-on:click="add2">-1</button> -->
+            <button @click="add">+1</button>
+            <button @click="add2">-1</button>
+        </p>
+        <p @mousemove="atualizarPosicao">
+            cordenadas: {{x}} e {{y}}
+            <span @mousemove.stop>Aqui não</span>
+        </p>
+        <input type="" @keyup.enter="alerta"> 
+    </div>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                x: 0,
+                y: 0,
+                contador: 0
+            },
+            methods: {
+                add() {
+                    this.contador++
+                },
+                add2()  {
+                    this.contador--
+                },
+                atualizarPosicao(e) {
+                    this.x = e.clientX
+                    this.y = e.clientY
+                },
+                alerta() {
+                    alert('Enter!')
+                }
+                
+            }
+        })
+    </script>
+</body>
+</html>
+
+<!-- "v-on"  essa diretiva faz o bind de uma função ou metodo pra ser chamado quando acontecer o evento 
+Também  podemos fazer de maneira reduzida assim como no v-bind -> : , podemos reduzir o v-on para -> @click-->
